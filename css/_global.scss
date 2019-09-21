@@ -18,21 +18,29 @@ body {
     color: #ffffff;
 }
 
+a, p {
+    font-size: 0.875rem;
+    
+    @include breakpoint(large){
+        font-size: 1rem;
+    }    
+}
+
 a {
-    text-decoration: none;
+    text-decoration: none;    
 }
 
 h1, h2, h3 {
     font-family: $font-title;
 }
 
-p {
+p {    
     margin-top: 0px;
     margin-bottom: 1.5em;
 }
 
 section {
-    padding: 0 27px 160px;
+    background-color: $mainBg;    
 }
 
 button {
@@ -47,5 +55,15 @@ button {
 
     &:hover {
         background: linear-gradient(to right, $ctaBlue, $ctaBlue);
+    }
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;    
+    padding: 25px 20px 100px 20px;
+
+    @include breakpoint(large){
+        padding: 73px 60px 87px 60px;
     }
 }
