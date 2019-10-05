@@ -3,11 +3,8 @@
     .feature-grid {
         display: grid;
         grid-template-columns: 1fr;           
-        gap: 6vw 10vw;
-        max-width: 920px;
+        gap: 6vw 10vw;        
         margin: 0 auto;
-        padding-left: 20px;
-        padding-right: 20px;
     
         @include breakpoint(medium){ 
             grid-template-columns: repeat(2, 1fr);
@@ -15,8 +12,6 @@
 
         @include breakpoint(large){       
             gap: 7vw 7vw;
-            padding-left: 60px;
-            padding-right: 60px;
         }
     }
 

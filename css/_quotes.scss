@@ -1,4 +1,5 @@
 .quotes {
+    padding-bottom: 200px;
 
     &__grid {
         position: relative;
@@ -7,14 +8,14 @@
         gap: 25px;
         max-width: 500px;
 
-        @include breakpoint(large){
-            grid-template-columns: repeat(3, 1fr);            
+        @include breakpoint(large) {
+            grid-template-columns: repeat(3, 1fr);
             gap: 40px;
             max-width: 1320px;
         }
-        
+
         &:first-child:before {
-            content: url('/images/bg-quotes.png');            
+            content: url('/images/bg-quotes.png');
             transform: scale(0.7);
             position: absolute;
             z-index: 0;
@@ -23,7 +24,7 @@
             width: 27px;
             height: 18px;
 
-            @include breakpoint(large){
+            @include breakpoint(large) {
                 transform: none;
                 top: 37px;
                 left: 50px;
@@ -40,7 +41,7 @@
         padding: 30px 24px 24px 24px;
         border-radius: 5px;
 
-        @include breakpoint(large){
+        @include breakpoint(large) {
             padding: 44px 24px 24px 24px;
         }
 
@@ -68,7 +69,7 @@
 
             &-name {
                 font-size: 0.5em;
-                font-weight: 700;           
+                font-weight: 700;
             }
 
             &-title {
